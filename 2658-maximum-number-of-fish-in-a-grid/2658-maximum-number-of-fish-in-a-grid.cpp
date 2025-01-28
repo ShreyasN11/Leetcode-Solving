@@ -20,7 +20,7 @@ public:
     int findMaxFish(vector<vector<int>>& grid) {
         int n = grid.size();
         int m = grid[0].size();
-        vector<vector<int>> visited(n, vector<int>(n,0));
+        vector<vector<int>> visited(n, vector<int>(m,0));
         int maxi =0;
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
