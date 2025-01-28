@@ -18,6 +18,8 @@ public:
         return sum + grid[i][j];
     }
     int findMaxFish(vector<vector<int>>& grid) {
+        ios_base::sync_with_stdio(false);
+        cin.tie(NULL);
         int n = grid.size();
         int m = grid[0].size();
         vector<vector<int>> visited(n, vector<int>(m,0));
