@@ -25,9 +25,9 @@ public:
            mp[x]--;
            hi++; 
            if(count == 0){
-                while(lo<hi){
-                    if(mini > hi-lo+1){
-                        mini = hi-lo+1; l=lo;
+                while(lo<=hi){
+                    if(mini > hi-lo){
+                        mini = hi-lo; l=lo;
                     }
                     char y = s[lo];
                     mp[y]++; lo++;
