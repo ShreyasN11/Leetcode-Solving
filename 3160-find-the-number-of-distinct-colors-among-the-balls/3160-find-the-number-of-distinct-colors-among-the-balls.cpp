@@ -12,14 +12,10 @@ public:
             if(mp.find(ball) != mp.end()){
                 int oldcol = mp[ball];
                 mpp[oldcol]--;
-                if(mpp[oldcol] == 0) mpp.erase(oldcol);
-                mp[ball] = col;    
-                mpp[col]++;            
+                if(mpp[oldcol] == 0) mpp.erase(oldcol);            
             }
-            else{
-                mp[ball] = col;
-                mpp[col]++;
-            }
+            mp[ball] = col;    
+            mpp[col]++;
             res.push_back(mpp.size());
         }
         return res;
