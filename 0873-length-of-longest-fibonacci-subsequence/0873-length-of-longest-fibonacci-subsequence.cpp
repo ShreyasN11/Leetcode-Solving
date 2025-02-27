@@ -18,6 +18,7 @@ public:
                     maxi = max(maxi,curlen);
                 }
             }
+            st.erase(arr[i]);
         }
         return maxi;
     }
