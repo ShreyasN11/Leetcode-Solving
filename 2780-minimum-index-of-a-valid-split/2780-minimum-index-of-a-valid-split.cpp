@@ -19,7 +19,7 @@ public:
             if(nums[i] == maxi){
                 left++; right--;
             } 
-            cout<<left<<" "<<right<<endl;
+            // cout<<left<<" "<<right<<endl;
             if(i<n-1 && left > (i+1)/2 && right > (n-i-1)/2){
                 return i;
             }
