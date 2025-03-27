@@ -10,7 +10,7 @@ public:
                 maxi = nums[i];
             }
         }
-        if(mp[maxi] <= (n+1)/2){
+        if(!(mp[maxi] > n/2)){
             return -1;
         }
         int right = mp[maxi];
@@ -20,7 +20,7 @@ public:
                 left++; right--;
             } 
             cout<<left<<" "<<right<<endl;
-            if(i>0 && i<n-1 && left > (i+1)/2 && right > (n-i-1)/2){
+            if(i<n-1 && left > (i+1)/2 && right > (n-i-1)/2){
                 return i;
             }
         }
